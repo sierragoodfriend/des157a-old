@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #104e87;
+    color: rgb(244, 242, 242);
+    line-height: 60px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+}
+
+#studiosContainer {
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(225, 132, 51);
+    display: block;
+    padding: 30px 20px 30px 20px;
+    width: 30vw;
+    margin: 60px 20px 20px 20px;
+    border-radius: 20px; 
+}
+
+.boldTitles {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#experimentsContainer {
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(71, 166, 197);
+    display: block;
+    padding: 30px 20px 30px 20px;
+    width: 30vw;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px; 
+}
+
+#leftColumnFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#rdContainer {
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(107, 173, 95);
+    display: block;
+    padding: 110px 30px 30px 30px;
+    margin: 60px 20px 20px 20px;
+    width: 30vw;
+    border-radius: 20px; 
+}
+
+#middleColumnFlex {
+    display: flex;
+}
+
+/* justify-content: center; */
+
+#finalContainer {
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(229, 100, 83);
+    display: block;
+    padding: 40px 40px 40px 40px;
+    width: 60vw;
+    margin: 20px;
+    border-radius: 20px; 
+}
+
+#centeringContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this line to center horizontally */
+    
+}
+
+@media (min-width: 600px) {
+
+.boldTitles {
+    font-size: 25px;
+}
+
+#studiosContainer, #experimentsContainer, #rdContainer, #finalContainer {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+}
