@@ -69,6 +69,7 @@ nav ul li:hover {
 footer {
     width: 370px;
     height: 50px;
+    margin-bottom: 10px;
     border-radius: 30px;
     padding: 10px;
     background-color: rgb(246, 239, 239, 0.95);
