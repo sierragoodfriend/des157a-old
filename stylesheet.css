@@ -63,6 +63,7 @@ nav ul li:hover {
     color: red;
     font-weight: 500;
     font-style: italic;
+    cursor: pointer;
 }
 
 footer {
