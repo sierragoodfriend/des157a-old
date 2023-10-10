@@ -1,204 +1,84 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    text-align: center;
 }
 
 body {
-    background-color: #07345f;
-    color: rgb(244, 242, 242);
-    line-height: 60px;
-    overflow-y: auto;
+    background-image: url(images/backgroundimage.jpg);
+    background-attachment: fixed;
+}
+
+#banner {
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(246, 239, 239, 0.95);
+    color: black;
+    border-radius: 45px;
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 34px;
-    text-align: center;
-    background-color: #0760b4;
-    line-height: 1.3;
-    padding: 20px;
-    margin: 0;
+    padding: 50px 0px 0px 0px; /* "Sierra Goodfriend" lower inside the banner */
 }
 
-.boldTitles {
-    font-size: 3vw;
-    font-weight: 800;
-    text-align: center;
+main {
+    display: flex;
+    max-width: 1200px;
+    font-size: 20px;
+}
+
+#leftColumn, #middleColumn, #rightColumn {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: rgba(48, 46, 46, 0.95);
+    color: rgb(246, 239, 239);
+    padding: 24px;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: 0.35s ease-in-out;
+}
+
+#leftColumn:hover, #middleColumn:hover, #rightColumn:hover {
+    background-color: rgb(246, 239, 239, 0.95);
+    color: rgba(48, 46, 46);
+}
+
+.sectionNames {
     text-decoration: underline;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-
-#studiosContainer, #experimentsContainer, #rdContainer, #finalContainer {
-    line-height: 35px;
+nav ul li {
+    list-style-type: none;
     text-align: center;
-    font-size: 3vw;
+    margin: 0;
+    transition: 0.1s ease-in-out;
+}
+
+nav ul li:hover {
+    color: red;
+    font-weight: 500;
+    font-style: italic;
+}
+
+footer {
+    width: 370px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgb(246, 239, 239, 0.95);
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5vw; 
-    width: 20vw;
-    transition: 0.3s ease-in-out;
-}
-
-#studiosContainer {
-    background-color: rgb(225, 132, 51); 
-}
-
-#studiosContainer:hover {
-    background-color: rgb(244, 242, 242); 
-    color: rgb(225, 132, 51); 
-    font-weight: 600;
-}
-
-#experimentsContainer {
-    background-color: rgb(71, 166, 197);
-}
-
-#experimentsContainer:hover {
-    background-color: rgb(244, 242, 242); 
-    color: rgb(71, 166, 197);
-    font-weight: 600;
-}
-
-#rdContainer {
-    background-color: rgb(107, 173, 95);
-}
-
-#rdContainer:hover {
-    background-color: rgb(244, 242, 242); 
-    color: rgb(107, 173, 95);
-    font-weight: 600;
-}
-
-#finalContainer {
-    background-color: rgb(229, 100, 83);
-}
-
-#finalContainer:hover {
-    background-color: rgb(244, 242, 242); 
-    color: rgb(229, 100, 83);
-    font-weight: 600;
-}
-
-#rdFlex {
-    display: flex;
-}
-
-#leftColumnFlex {
-    display: flex;
-    flex-direction: column;
-}
-
-#centeringContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0px 0px 0px;
-}
-
-.footerStyling {
-    line-height: 1.5;
-    text-align: center;
-    font-size: 3vw;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    padding: 10px 0px 10px 0px;
-    background-color:  #0760b4;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.4;
 }
 
 a {
     text-decoration: none;
-    color: rgb(249, 138, 138);
+    color: rgb(100, 98, 98);
 }
-
-@media (max-width: 480px) {
-h1 {
-    font-size: 24px;
-    line-height: 1.5;
-}
-
-#studiosContainer, #experimentsContainer, #rdContainer, #finalContainer {
-    font-size: 12px;
-    padding: 10px;
-}
-}
-
-
-@media (min-width: 700px) {
-    h1 {
-        font-size: 4vw;
-        padding: 20px 10px 20px 10px;
-    }
-
-    #studiosContainer, #experimentsContainer, #rdContainer, #finalContainer {
-        line-height: 2;
-        padding: 20px;
-        margin: 20px;
-        font-size: 2vw;
-    }
-
-    .footerStyling {
-        font-size: 2vw;
-    }
-}
-
-
-@media (min-width: 850px) {
-    #centeringContainer {
-        padding: 20px 0px 0px 0px;
-    }
-}
-
-@media (min-width: 950px) {
-    h1 {
-        font-size: 4vw;
-    }
-    
-    .boldTitles {
-        font-size: 2vw;
-    }
-
-    #studiosContainer, #experimentsContainer, #rdContainer, #finalContainer {
-        font-size: 2vw;
-    }
-
-    .footerStyling {
-        font-size: 1.5vw;
-    }
-}
-
-@media (min-width: 1080px) {
-    h1 {
-        font-size: 4vw;
-    }
-    
-    .boldTitles {
-        font-size: 1.7vw;
-    }
-
-    #studiosContainer, #experimentsContainer, #rdContainer, #finalContainer {
-        font-size: 1.7vw;
-        padding: 8px;
-        margin: 10px;
-    }
-
-    .footerStyling {
-        font-size: 1.5vw;
-    }
-}
-
-@media (max-height: 800px) {
-    body {
-      height: 800px; /* Set a maximum height in pixels */
-    }
-  }
-
-/* @media (max-width: 1200px) {
-    body {
-      width: 1200px; 
-    } */

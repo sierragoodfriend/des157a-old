@@ -2,83 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,500&family=Young+Serif&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>DES 157A Portal Page</title>
+    <title>Portal Page</title>
 </head>
 <body>
-    
-    <header>
-        <h1>
-            DES 157A – Interactive Media II – Fall 2023
-        </h1>
-    </header> 
 
-    <div id="centeringContainer">
-        <!-- groups all boxes and keeps them in the middle of the screen -->
-        <div id="rdFlex">
-            <!-- puts r&d box next to the studios and experiments box -->
-            <div id="leftColumnFlex"> 
-                <!-- captures studios and experiments together and puts them into a collumn -->
-                <div id="studiosContainer">
-                    <p class="boldTitles">
-                        Studios 
-                    </p>
+    <div id="banner">
 
-                    <p>        
-                        Learning Journal <br>
-                        Mad Libs 2.0 <br> 
-                        Every Picture <br>
-                        Game On! <br>
-                    </p>
-                </div>
+        <h1>Sierra Goodfriend</h1>
+        <h2>DES 157A – Interactive Media II – Fall 2023</h2>
 
-                <div id="experimentsContainer">
-                    <p class="boldTitles">
-                        Experiments
-                    </p>
-
-                    <p>        
-                        Experiment 1 <br>
-                        Experiment 2<br> 
-                    </p>
-                </div>
-            </div>
-
-            <div id="rdContainer">
-                <p class="boldTitles">
-                    R&D
-                </p>
-
-                <p>        
-                    Project Brief <br>
-                    Design Comp <br> 
-                    Version 1 <br>
-                    Version 2 <br>
-                </p>
-            </div>
-
-            <div id="finalContainer">
-                <p class="boldTitles">
-                    Final Project
-                </p>
-
-                <p>        
-                    Final Project
-                </p>
-            </div> 
-        </div>
     </div>
 
-    <footer class="footerStyling">
-        Page by: Sierra Goodfriend <br>
-        Contact: <a href="mailto:&#115;&#105;&#101;&#114;&#114;&#097;&#103;&#111;&#111;&#100;&#102;&#114;&#105;&#101;&#110;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#105;&#101;&#114;&#114;&#097;&#103;&#111;&#111;&#100;&#102;&#114;&#105;&#101;&#110;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+    <main>
+
+        <div id="leftColumn">
+            <h2 class="sectionNames">Studios</h2>
+                <nav>
+                    <ul>
+                        <li>Learning Journal</li>
+                        <li>Mad Libs 2.0</li>
+                        <li>Every Picture</li>
+                        <li>Game On!</li>
+                    </ul>
+                </nav> <br>
+            <h2 class="sectionNames">Experiments</h2>
+                <nav>
+                    <ul>
+                        <li>Experiment 1</li>
+                        <li>Experiment 2</li>
+                    </ul>
+                </nav>
+        </div>
+
+        <div> <!-- this div holds together middle column (r&d) and the swirl picture so the swirl can go underneath -->
+            <div id="middleColumn">
+                <h2 class="sectionNames">Research and Development</h2>
+                    <nav>
+                        <ul>
+                            <li>Project Brief</li>
+                            <li>Design Comp</li>
+                            <li>Version 1</li>
+                            <li>Version 2 (User Test)</li>
+                            <li>User Test Results</li>
+                        </ul>
+                    </nav>
+            </div>
+            <img id="swirl" src="/images/smallerswirl.png" alt="Swirl">
+        </div>
+
+        <div> <!-- this div holds together right column (final project) and the swirl picture so the swirl can go underneath -->
+            <div id="rightColumn">
+                <h2 class="sectionNames">Final Project</h2>
+                    <nav>
+                        <ul>
+                            <li>Final Project</li>
+                        </ul>
+                    </nav>
+            </div>
+            <img id="swirl" src="/images/swirl.png" alt="Swirl">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Thanks for visiting my page! <br>Contact: <a href="mailto:&#115;&#105;&#101;&#114;&#114;&#097;&#103;&#111;&#111;&#100;&#102;&#114;&#105;&#101;&#110;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#105;&#101;&#114;&#114;&#097;&#103;&#111;&#111;&#100;&#102;&#114;&#105;&#101;&#110;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
     </footer>
+
+
+
 </body>
 </html>
