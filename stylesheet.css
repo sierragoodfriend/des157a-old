@@ -18,6 +18,19 @@ body {
     border-radius: 45px;
     font-family: 'Young Serif', serif;
     font-size: 28px;
+    animation: titleColorChange 5s;
+}
+
+@keyframes titleColorChange {
+    0% {
+        color: initial;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: initial;
+    }
 }
 
 h1 {
