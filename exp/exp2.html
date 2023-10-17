@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+
+    <label for="userName">Type your Name:</label> 
+    <input type="text" id="userName">
+
+    <br><br><br>
+
+    <label for="favoriteColor">Type your favorite color:</label>
+    <input type="text" id="favoriteColor">
+
+    <br><br><br>
+
+    <button id="greetingButton">Click me!</button>
+    <h1 id="displayGreeting"></h1>
+
+    <script>
+        //I chose to make two response boxes wherein users can type their name and their favorite color and recieve a response that greets them and puts their name into a rectangle that is their favorite color.
+        
+        function backgroundColor(element, color) {
+            element.style.backgroundColor = color;
+        }
+
+        var userNameInput = document.getElementById('userName');
+
+        var favoriteColorInput = document.getElementById('favoriteColor');
+
+        var displayGreeting = document.getElementById('displayGreeting');
+
+        function createGreeting() {
+            var name = userNameInput.value;
+            var color = favoriteColorInput.value;
+            displayGreeting.textContent = `Hello, ${name}!`;
+            backgroundColor(displayGreeting, color);
+        }
+
+        var greetingButton = document.getElementById('greetingButton');
+        greetingButton.addEventListener('click', createGreeting);
+
+    </script>
+</body>
+</html>
