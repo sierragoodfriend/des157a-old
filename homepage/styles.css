@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(images/backgroundimage.jpg);
+    background-image: url(../images/backgroundimage.jpg);
     background-attachment: fixed;
 }
 
@@ -65,18 +65,27 @@ main {
     margin-bottom: 5px;
 }
 
-nav ul li {
+nav ul {
     list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
     text-align: center;
     margin: 0;
     transition: 0.1s ease-in-out;
+    color: inherit;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: red;
     font-weight: 500;
     font-style: italic;
     cursor: pointer;
+}
+
+nav ul li a:visited {
+    color: inherit;
 }
 
 footer {
@@ -93,7 +102,3 @@ footer {
     line-height: 1.4;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(100, 98, 98);
-}
