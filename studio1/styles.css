@@ -9,11 +9,12 @@ body {
 
 header {
     font-family: 'Metal Mania', serif;
-    font-size: 64px;
+    font-size: 54px;
     text-align: center;
     margin-top: -5px;
     margin-bottom: 15px;
     color: black;
+    text-decoration: underline;
 }
 
 label {
