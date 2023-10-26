@@ -1,0 +1,77 @@
+html {
+    max-width: 1200px;
+}
+
+body {
+    background: rgb(255,138,0);
+    background: radial-gradient(circle, rgba(255,138,0,1) 0%, rgba(0,0,0,0.9) 100%);
+}
+
+header {
+    font-family: 'Metal Mania', serif;
+    font-size: 64px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+label {
+    display: block; /* puts text ontop of box */
+    margin-bottom: 2px;;
+    margin-top: 12px;
+    font-size: 18px;;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    animation: hoverAnimation 0.4s infinite;
+}
+
+
+input[type="text"]:hover {
+    border: 2px groove rgb(255, 102, 0);
+    animation: hoverAnimation 0.5s ease-in-out;
+}
+
+#form-container {
+    font-family: 'Risque', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form-column {
+    padding: 0px 15px 15px 15px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: rgb(221, 221, 221);
+}
+
+#button {
+    position: absolute;
+    bottom: -250px;
+    font-size: 22px;
+    z-index: 1;
+}
+
+@keyframes hoverAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-3px);
+    }
+    50% {
+      transform: translateY(0);  
+    }
+    75% {
+      transform: translateY(3px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
