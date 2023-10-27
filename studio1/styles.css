@@ -39,7 +39,6 @@ img {
 input[type="text"]:hover {
     border: 2px groove rgb(255, 255, 255);
     animation: hoverAnimation 0.2s;
-    background-image: ;
 }
 
 #form-container {
