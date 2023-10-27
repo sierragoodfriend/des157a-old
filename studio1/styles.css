@@ -1,7 +1,7 @@
 html {
     max-width: 1200px;
+    min-height: 750px;
     max-height: 750px;
-    margin: auto;
 }
 
 body {
@@ -12,9 +12,9 @@ body {
 
 header {
     font-family: 'Metal Mania', serif;
-    font-size: 54px;
+    font-size: 90px;
     text-align: center;
-    margin-top: -5px;
+    margin: auto;
     margin-bottom: 23px;
     color: black;
     text-decoration: underline;
@@ -23,7 +23,7 @@ header {
 label {
     display: block; /* puts text ontop of box */
     /* margin-bottom: 1px;; */
-    margin-top: 13px;
+    margin-top: 12px;
     font-size: 16px;;
 }
 
@@ -31,13 +31,15 @@ img {
     display: block;
     max-width: 100%;
     margin: auto;
-    animation: hoverAnimation 0.5s infinite;
+    margin-top: 10px;
+    animation: hoverAnimation 0.5s ease-in-out infinite;
 }
 
 
 input[type="text"]:hover {
-    border: 2px groove rgb(255, 102, 0);
-    animation: hoverAnimation 0.2s ease-in-out;
+    border: 2px groove rgb(255, 255, 255);
+    animation: hoverAnimation 0.2s;
+    background-image: ;
 }
 
 #form-container {
@@ -62,8 +64,8 @@ input[type="text"]:hover {
 
 #button {
     position: absolute;
-    bottom: -250px;
-    font-size: 24px;
+    bottom: -200px;
+    font-size: 18px;
     z-index: 1;
     margin-bottom: 4px;
 }
