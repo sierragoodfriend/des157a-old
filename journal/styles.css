@@ -91,3 +91,8 @@ a:hover {
     font-weight: 500;
     cursor: pointer;
 }
+
+img {
+    padding-left: 10px;
+}
+    
